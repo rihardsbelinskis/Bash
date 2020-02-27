@@ -15,5 +15,7 @@ find $directory -name '*.xml' | xargs rm -f
 find $directory -name '*.gz' | xargs rm -f
 find $directory -name '*.toc' | xargs rm -f
 find $directory -name '*.out' | xargs rm -f
+find $directory -name '*.lof' | xargs rm -f
+find $directory -name '*.lot' | xargs rm -f
 
 echo "The unnecessary LaTeX compiler generated files have been removed. Bye, bye, files!"
